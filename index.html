@@ -5,35 +5,28 @@
         <meta charset="utf-8">
         <title>Portfolio Website Theme</title>
         <link rel="stylesheet" href="css/style.css" type="text/css" />  
-        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>  
+    
+        <!-- jQuery library (served from Google) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!-- bxSlider Javascript file -->
+        <script src="js/jquery.bxslider.js"></script>
+        <script>
+            $(document).ready(function(){
+              $('.bxslider').bxSlider();
+               
+            });
+        </script>
+         <!-- bxSlider CSS file -->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    
     </head>
     <body>
-       <script type="text/javascript">$(document).ready(function() {
-             $(".slider").each(function () { // обрабатываем каждый слайдер
-              var obj = $(this);
-              $(obj).append("<div class='nav'></div>");
-              $(obj).find("li").each(function () {
-               $(obj).find(".nav").append("<span rel='"+$(this).index()+"'></span>"); // добавляем блок навигации
-               $(this).addClass("slider"+$(this).index());
-              });
-              $(obj).find("span").first().addClass("on"); // делаем активным первый элемент меню
-             });
-            });function sliderJS (obj, sl) { // slider function
-             var ul = $(sl).find("ul"); // находим блок
-             var bl = $(sl).find("li.slider"+obj); // находим любой из элементов блока
-             var step = $(bl).width(); // ширина объекта
-             $(ul).animate({marginLeft: "-"+step*obj}, 500); // 500 это скорость перемотки
-            }$(document).on("click", ".slider .nav span", function() { // slider click navigate
-             var sl = $(this).closest(".slider"); // находим, в каком блоке был клик
-             $(sl).find("span").removeClass("on"); // убираем активный элемент
-             $(this).addClass("on"); // делаем активным текущий
-             var obj = $(this).attr("rel"); // узнаем его номер
-             sliderJS(obj, sl); // слайдим
-             return false;
-            });</script>
+       
         <div class="background-header">
             <header>
                 <a class="logo" href="#"><img src="image/content/logo.png" alt=""></a>
+                
+                <input type="text" class="search">
                 <ul class="main-navigation">
                     <li><a class="active" href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -42,24 +35,24 @@
                     <li><a href="#">Archives</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <input type="text" class="search">
             </header>
         </div>
         <div class="background-portfolio">
             <div class="portfolio">
-                <div class="about-slider">
-                    <h1>Portfolio Website Theme: Perfect for Anyone</h1>
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</h3><h3> Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. </h3>
-                    <input type="button" value="See Our Work" class="button">
-                </div>
-                <div class="slider">
-                    <ul>
-                        <li><img src="image/content/computer.png" alt=""></li>
-                        <li><img src="image/content/2.jpg" alt=""></li>
-                        <li><img src="image/content/3.jpg" alt=""></li>
-                        <li><img src="image/content/4.jpg" alt=""></li>
+                    <ul class="bxslider">
+                        <li><img src="/image/content/1.jpg" alt="">
+                            
+                               <div class="about-slider">
+                                <h1>Portfolio Website Theme: Perfect for Anyone</h1>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</h3><h3> Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. </h3>
+                                <input type="button" value="See Our Work" class="button">
+                            </div>
+                           
+                        </li>
+                        <li><img src="/image/content/2.jpg" alt=""></li>
+                        <li><img src="/image/content/3.jpg" alt=""></li>
+                        <li><img src="/image/content/4.jpg" alt=""></li>
                     </ul>
-                </div>
             </div>
         </div>
         <div class="background-main-content">
@@ -123,26 +116,27 @@
                      <li>
                         <div class="collumn-widget">
                             <h2>About Porftolio</h2>
-                            <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, persinioa inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. </p>
-                            <p>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</p>
+                            <h3>Class aptent taciti sociosqu ad litora torquent per conubia nostra, persinioa inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. </h3>
+                            <h3>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</h3>
                         </div>
                     </li>
                     <li>
                         <div class="collumn-widget">
                             <h2>Recent Posts</h2>
-                            <p>Yastech Developments: The Best Web Design Company</p>
-                            <p>Best PSD Freebies: Amazing Design Resource &amp Inspiration</p>
-                            <p>Best PSD Freebies: Login Form</p>
-                            <p>Wedding Photography Shoot Takes &amp Tricks</p>                        </div>
+                            <h3>Yastech Developments: The Best Web Design Company</h3>
+                            <h3>Best PSD Freebies: Amazing Design Resource &amp Inspiration</h3>
+                            <h3>Best PSD Freebies: Login Form</h3>
+                            <h3>Wedding Photography Shoot Takes &amp Tricks</h3>                       
+                        </div>
                     </li>
                     <li>
                         <div class="collumn-widget">
                             <h2>Twitter Widget</h2>
-                            <p>@<a href="#">pixelmater</a> What an awesome design with great functionality :) </p>
+                            <h3>@<a href="#">pixelmater</a> What an awesome design with great functionality :) </h3>
                             <p><a href="">about 1 hour ago</a></p>
-                            <p>@<a href="#">designdude</a> What an awesome design with great functionality :) </p>
+                            <h3>@<a href="#">designdude</a> What an awesome design with great functionality :) </h3>
                             <p><a href="">about 1 hour ago</a></p>
-                            <p>Follow @<a href="">psdfreebies</a></p>
+                            <h3>Follow @<a href="">psdfreebies</a></h3>
                         </div>
                     </li>
                     <li>
