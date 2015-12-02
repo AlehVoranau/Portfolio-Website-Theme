@@ -16,40 +16,27 @@
 
 .bx-wrapper {
 	position: relative;
-	margin: 0 auto 60px;
+	margin: 0 6px 60px;
 	padding: 0;
 	*zoom: 1;
 }
 
 .bx-wrapper img {
+    float: right;
 	max-width: 100%;
 	display: block;
+    margin: 4px;
 }
 
 /** THEME
 ===================================*/
-
-.bx-wrapper .bx-viewport {
-	-moz-box-shadow: 0 0 5px #ccc;
-	-webkit-box-shadow: 0 0 5px #ccc;
-	box-shadow: 0 0 5px #ccc;
-	border:  5px solid #fff;
-	left: -5px;
-	background: #fff;
-	
-	/*fix other elements on the page moving (on Chrome)*/
-	-webkit-transform: translatez(0);
-	-moz-transform: translatez(0);
-    	-ms-transform: translatez(0);
-    	-o-transform: translatez(0);
-    	transform: translatez(0);
-}
 
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
 	position: absolute;
 	bottom: -30px;
 	width: 100%;
+    vertical-align: top;
 }
 
 /* LOADER */
@@ -84,10 +71,10 @@
 	background: #888888;
 	text-indent: -9999px;
 	display: inline-block;
-	width: 23px;
+	width: 25px;
 	height: 5px;
 	margin: 0 5px;
-	outline: 0;
+    font-size: 0;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
@@ -116,6 +103,7 @@
 }
 
 .bx-wrapper .bx-controls-direction a {
+    display: none;
 	position: absolute;
 	top: 50%;
 	margin-top: -16px;
@@ -196,3 +184,5 @@
 	font-size: .85em;
 	padding: 10px;
 }
+
+

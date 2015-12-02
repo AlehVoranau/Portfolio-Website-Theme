@@ -12,8 +12,10 @@
         <script src="js/jquery.bxslider.js"></script>
         <script>
             $(document).ready(function(){
-              $('.bxslider').bxSlider();
-               
+                   $('.bxslider').bxSlider({
+                      adaptiveHeight: true,
+                      mode: 'horizontal',
+                   });
             });
         </script>
          <!-- bxSlider CSS file -->
@@ -22,11 +24,14 @@
     </head>
     <body>
        
-        <div class="background-header">
-            <header>
+            <header class="page">
                 <a class="logo" href="#"><img src="image/content/logo.png" alt=""></a>
-                
-                <input type="text" class="search">
+                <form>
+                    <div class="search">
+                        <input type="submit" value="">
+                        <input type="search" name="">  
+                    </div>
+                </form>
                 <ul class="main-navigation">
                     <li><a class="active" href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -36,144 +41,248 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </header>
-        </div>
-        <div class="background-portfolio">
             <div class="portfolio">
                     <ul class="bxslider">
-                        <li><img src="/image/content/1.jpg" alt="">
-                            
-                               <div class="about-slider">
+                        <li><img src="image/content/computer.png" alt="">
+                            <div class="about-slider">
                                 <h1>Portfolio Website Theme: Perfect for Anyone</h1>
                                 <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</h3><h3> Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. </h3>
                                 <input type="button" value="See Our Work" class="button">
                             </div>
-                           
                         </li>
-                        <li><img src="/image/content/2.jpg" alt=""></li>
-                        <li><img src="/image/content/3.jpg" alt=""></li>
-                        <li><img src="/image/content/4.jpg" alt=""></li>
-                    </ul>
-            </div>
-        </div>
-        <div class="background-main-content">
-            <div class="collumn-content">
-                <ul>
-                    <li>
-                        <div class="collumn-limit">
-                            <h2>What I Can All Do</h2>
-                            <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
-                            <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collumn-limit">
-                            <h2>A Little Bit About Me</h2>
-                            <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
-                            <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collumn-limit">
-                            <h2>Follow Me on Twitter</h2>
-                            <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
-                            <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collumn-limit">
-                            <h2>Feel Free To Contact Me</h2>
-                            <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
-                            <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
-                            <a href="#">Read More</a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="preview-content">
-                        <h2>Recent Work</h2>
-                    <div class="preview-about">
+                        <li><img src="image/content/computer2.png" alt="">
+                            <div class="about-slider">
+                                <h2>What I Can All Do</h2>
                                 <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
                                 <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
-                    </div>
-                    <div class="preview-image">
-                            <ul>
-                                <li><a href="#"><img src="image/content/women.png" alt="" tabindex="0"></a></li>
-                                <li><a href="#"><img src="image/content/gun.png" alt=""></a></li>
-                                <li><a href="#"><img src="image/content/aircraft.png" alt=""></a></li>
-                                <li><a href="#"><img src="image/content/greenwood.png" alt=""></a></li>
-                                <li><a href="#"><img src="image/content/snowgiraffe.png" alt=""></a></li>
-                                <li><a href="#"><img src="image/content/stick.png" alt=""></a></li>
-                            </ul>
-                    </div>
+                            </div>
+                        </li>
+                        <li><img src="image/content/computer3.png" alt="">
+                            <div class="about-slider">
+                                <h1>Portfolio Website Theme: Perfect for Anyone</h1>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</h3><h3> Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. </h3>
+                            </div>
+                        </li>
+                        <li><img src="image/content/computer4.png" alt="">
+                            <div class="about-slider">
+                                <h1>Portfolio Website Theme: Perfect for Anyone</h1>
+                                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</h3><h3> Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. </h3>
+                                <input type="button" value="GO!" class="button">
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+            
+            <div class="background-main-content">
+                <div class="collumn-content">
+                    <ul>
+                        <li>
+                            <div class="collumn-limit">
+                                <h2>What I Can All Do</h2>
+                                <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
+                                <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collumn-limit">
+                                <h2>A Little Bit About Me</h2>
+                                <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
+                                <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collumn-limit">
+                                <h2>Follow Me on Twitter</h2>
+                                <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
+                                <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collumn-limit">
+                                <h2>Feel Free To Contact Me</h2>
+                                <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
+                                <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collumn-limit">
+                                <h2>A Little Bit About Me</h2>
+                                <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
+                                <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collumn-limit">
+                                <h2>Follow Me on Twitter</h2>
+                                <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
+                                <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collumn-limit">
+                                <h2>Feel Free To Contact Me</h2>
+                                <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
+                                <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
+                                <a href="#">Read More</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="preview-content">
+                            <h2>Recent Work</h2>
+                        <div class="preview-about">
+                                    <h3>Lorem ipsum dolor sit amet, omnis euismod indoctum mel.</h3>
+                                    <p>Lorem ipsum dolor sit amet, omnis euismod indoctum mel ei, mel erat ancillae eloquent iam id. Movet facete sea cu, deleniti adipiscing id eum. Mel alia consul constituto ex, no his inani reformidans accommoda re. Et eos viderer appellantur, ferri inimicus an ius, ne inermis deseruisse ius.</p>
+                        </div>
+                        <div class="preview-image">
+                                <ul>
+                                    <li>
+                                        <img class="preview" src="image/content/women.png" alt="">
+                                        <div class="hover">
+                                            <a href="#"><img src="image/layout/hover-search1.png" alt=""></a>
+                                            <div><p>201</p><p>Views</p></div>
+                                            <div><p>95</p><p>Likes</p></div>
+                                            <div><p>10</p><p>Commets</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img class="preview" src="image/content/greenwood.png" alt="">
+                                        <div class="hover">
+                                            <a href="#"><img src="image/layout/hover-search1.png" alt=""></a>
+                                            <div><p>201</p><p>Views</p></div>
+                                            <div><p>95</p><p>Likes</p></div>
+                                            <div><p>10</p><p>Commets</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img class="preview" src="image/content/women.png" alt="">
+                                        <div class="hover">
+                                            <a href="#"><img src="image/layout/hover-search1.png" alt=""></a>
+                                            <div><p>201</p><p>Views</p></div>
+                                            <div><p>95</p><p>Likes</p></div>
+                                            <div><p>10</p><p>Commets</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img class="preview" src="image/content/snowgiraffe.png" alt="">
+                                        <div class="hover">
+                                            <a href="#"><img src="image/layout/hover-search1.png" alt=""></a>
+                                            <div><p>201</p><p>Views</p></div>
+                                            <div><p>95</p><p>Likes</p></div>
+                                            <div><p>10</p><p>Commets</p></div>
+                                        </div>
+                                    </li>
+                                     <li>
+                                        <img class="preview" src="image/content/aircraft.png" alt="">
+                                        <div class="hover">
+                                            <a href="#"><img src="image/layout/hover-search1.png" alt=""></a>
+                                            <div><p>201</p><p>Views</p></div>
+                                            <div><p>95</p><p>Likes</p></div>
+                                            <div><p>10</p><p>Commets</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img class="preview" src="image/content/gun.png" alt="">
+                                        <div class="hover">
+                                            <a href="#"><img src="image/layout/hover-search1.png" alt=""></a>
+                                            <div><p>201</p><p>Views</p></div>
+                                            <div><p>95</p><p>Likes</p></div>
+                                            <div><p>10</p><p>Commets</p></div>
+                                        </div>
+                                    </li> 
+                                    <li>
+                                        <img class="preview" src="image/content/greenwood.png" alt="">
+                                        <div class="hover">
+                                            <a href="#"><img src="image/layout/hover-search1.png" alt=""></a>
+                                            <div><p>201</p><p>Views</p></div>
+                                            <div><p>95</p><p>Likes</p></div>
+                                            <div><p>10</p><p>Commets</p></div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img class="preview" src="image/content/stick.png" alt="">
+                                        <div class="hover">
+                                            <a href="#"><img src="image/layout/hover-search1.png" alt=""></a>
+                                            <div><p>201</p><p>Views</p></div>
+                                            <div><p>95</p><p>Likes</p></div>
+                                            <div><p>10</p><p>Commets</p></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                        </div>
                 </div>
             </div>   
-        </div>
-        <div class="background-widget">
-            <div class="widget-content">
-                <ul>
-                     <li>
-                        <div class="collumn-widget">
-                            <h2>About Porftolio</h2>
-                            <h3>Class aptent taciti sociosqu ad litora torquent per conubia nostra, persinioa inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. </h3>
-                            <h3>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collumn-widget">
-                            <h2>Recent Posts</h2>
-                            <h3>Yastech Developments: The Best Web Design Company</h3>
-                            <h3>Best PSD Freebies: Amazing Design Resource &amp Inspiration</h3>
-                            <h3>Best PSD Freebies: Login Form</h3>
-                            <h3>Wedding Photography Shoot Takes &amp Tricks</h3>                       
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collumn-widget">
-                            <h2>Twitter Widget</h2>
-                            <h3>@<a href="#">pixelmater</a> What an awesome design with great functionality :) </h3>
-                            <p><a href="">about 1 hour ago</a></p>
-                            <h3>@<a href="#">designdude</a> What an awesome design with great functionality :) </h3>
-                            <p><a href="">about 1 hour ago</a></p>
-                            <h3>Follow @<a href="">psdfreebies</a></h3>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="collumn-widget">
-                            <h2>Flickr Widget</h2>
-                            <div class="preview-widget">
-                                <ul>
-                                    <li><a href="#"><img src="image/content/women.png" alt="" ></a></li>
-                                    <li><a href="#"><img src="image/content/gun.png" alt=""></a></li>
-                                    <li><a href="#"><img src="image/content/aircraft.png" alt=""></a></li>
-                                    <li><a href="#"><img src="image/content/greenwood.png" alt=""></a></li>
-                                    <li><a href="#"><img src="image/content/snowgiraffe.png" alt=""></a></li>
-                                    <li><a href="#"><img src="image/content/stick.png" alt=""></a></li>
-                                    <li><a href="#"><img src="image/content/women.png" alt="" ></a></li>
-                                    <li><a href="#"><img src="image/content/gun.png" alt=""></a></li>
-                                    <li><a href="#"><img src="image/content/aircraft.png" alt=""></a></li>
-                                    <li><a href="#"><img src="image/content/greenwood.png" alt=""></a></li>
-                                    <li><a href="#"><img src="image/content/snowgiraffe.png" alt=""></a></li>
-                                    <li><a href="#"><img src="image/content/stick.png" alt=""></a></li>
-                                </ul>
+           
+            <div class="background-widget-content">
+                <div class="widget-content">
+                    <ul>
+                         <li>
+                            <div class="collumn-widget">
+                                <h2>About Porftolio</h2>
+                                <h3>Class aptent taciti sociosqu ad litora torquent per conubia nostra, persinioa inceptos himenaeos. Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. </h3>
+                                <h3>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</h3>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
+                        </li>
+                        <li>
+                            <div class="collumn-widget">
+                                <h2>Recent Posts</h2>
+                                <h3>Yastech Developments: The Best Web Design Company</h3>
+                                <h3>Best PSD Freebies: Amazing Design Resource &amp Inspiration</h3>
+                                <h3>Best PSD Freebies: Login Form</h3>
+                                <h3>Wedding Photography Shoot Takes &amp Tricks</h3>                       
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collumn-widget">
+                                <h2>Twitter Widget</h2>
+                                <h3>@<a href="#">pixelmater</a> What an awesome design with great functionality :) </h3>
+                                <p><a href="">about 1 hour ago</a></p>
+                                <h3>@<a href="#">designdude</a> What an awesome design with great functionality :) </h3>
+                                <p><a href="">about 1 hour ago</a></p>
+                                <h3>Follow @<a href="">psdfreebies</a></h3>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="collumn-widget">
+                                <h2>Flickr Widget</h2>
+                                <div class="preview-widget">
+                                    <ul>
+                                        <li><a href="#"><img src="image/content/women.png" alt="" ></a></li>
+                                        <li><a href="#"><img src="image/content/gun.png" alt=""></a></li>
+                                        <li><a href="#"><img src="image/content/aircraft.png" alt=""></a></li>
+                                        <li><a href="#"><img src="image/content/greenwood.png" alt=""></a></li>
+                                        <li><a href="#"><img src="image/content/snowgiraffe.png" alt=""></a></li>
+                                        <li><a href="#"><img src="image/content/stick.png" alt=""></a></li>
+                                        <li><a href="#"><img src="image/content/women.png" alt="" ></a></li>
+                                        <li><a href="#"><img src="image/content/gun.png" alt=""></a></li>
+                                        <li><a href="#"><img src="image/content/aircraft.png" alt=""></a></li>
+                                        <li><a href="#"><img src="image/content/greenwood.png" alt=""></a></li>
+                                        <li><a href="#"><img src="image/content/snowgiraffe.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>       
+        
         <div class="background-footer">
-            <footer>
-                <a class="logo" href="#"><img src="image/content/logo.png" alt=""></a>
-                <div class="about-contact">
+            <footer class="page">
+                <a class="logo-footer" href="#"><img src="image/content/logo.png" alt=""></a>
+                <span class="about-contact">
                     <p>The Ultimate Portfolio  Wordpress Theme on the Web</p>
                     <p>t: (888) 842 - 8356  e: info@bestpsdfreebies.com</p>
-                </div>
-                <div class="about-powered">
+                </span>
+                <span class="about-powered">
                     <p>Copyright 2012. Powered by <a href="#">Wordpress</a></p>
                     <p><a href="#">Portfolio</a> Theme by <a href="#">Best PSD Freebies</a></p>
-                </div>
+                </span>
             </footer>    
         </div>
     </body>
